@@ -1,0 +1,29 @@
+
+//Criar tad no
+typedef struct No
+{
+    int elemento;
+    struct No *prox;
+}No;
+
+//Criar tad pilha
+typedef struct Pilha
+{
+    int tamanho;
+    No *cabeca;
+}Pilha;
+
+//Criar funcao de inicializacao da pilha
+Pilha *criaPilha();
+
+//Funcao para empilhar
+int empilha(Pilha *pilha, int elemento);
+
+//Funcao para desempilhar
+int desempilha(Pilha *pilha);
+
+//Funcao para mostrar itens da pilha
+void mostraPilha(Pilha *pilha);
+
+//Funcao para desalocar a pilha
+void limpaPilha(Pilha *pilha);
